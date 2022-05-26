@@ -18,7 +18,7 @@ This backend contains the following:
 ```bash
   npm install
 ```
-* Start Expo with
+* Start backend with
 ```bash
   npm start
 ```
@@ -26,15 +26,17 @@ This backend contains the following:
 You should have mongoDB installed on your machine, moreover you should create a database called "areeba" and inside it a collection called "customers"
 ## API Reference
 
+You can access all the APIs on Postman by joining with this <a href="https://app.getpostman.com/join-team?invite_code=ffdc624833dae4d1fd275f30ab054bcd&target_code=c723def5086a266c1f2b8ba5d031ab5f">link</a>
+
 #### Validation Phone Number
 
 ```http
-  GET /number/${number}
+  GET /number/${phoneNumber}
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `number`      | `string` | **Required**. Phone number to be validate |
+| `phoneNumber`      | `string` | **Required**. Phone number to be validate |
 
 #### ADD Customer API
 
